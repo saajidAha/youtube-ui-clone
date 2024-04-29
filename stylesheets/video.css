@@ -1,0 +1,134 @@
+/* CSS CODE FOR THE VIDEOS */   
+.main-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:16px;
+    row-gap:40px;
+}
+
+@media (max-width:750px){
+    .main-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:750px) and (max-width:1299px){
+    .main-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:1300px){
+    .main-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+a {
+    text-decoration:none;
+    color:black;
+}
+.dp-description-grid{
+    display:grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.thumb{
+    width:100%;
+    margin-bottom:5px;
+    border:none;
+    border-radius:2px;
+}
+
+.thumb-div{
+    position:relative;
+    margin-bottom:4px;
+}
+
+.time{
+    position:absolute;
+    bottom:15px;
+    right:10px;
+    background-color: black;
+    color:white;
+    padding:3px 5px;
+    border:none;
+    border-radius:3px;
+    font-size:13px;
+}
+
+.title{
+    width:100%;
+    font-size: 15px;
+    font-weight:500;
+    margin-bottom:10px;
+    line-height:20px;
+}
+
+.author,
+.stats{
+    color:grey;
+    font-size: 13px
+}
+
+.author{
+    margin-bottom:2px;
+}
+
+.dp-div{
+    width:50px;
+    position: relative;
+}
+
+.dp1{
+    width:36px;
+    border-radius:50px;
+}
+
+.descrip-div{
+    width:75%;
+}
+
+.dp-tooltip{
+    position:absolute;
+    display:flex;
+    flex-direction: row;
+    width: 200px;
+    position:absolute;
+    bottom:-35px;
+    left:15px;
+    background-color: white;
+    border:none;
+    box-shadow:0 0 6px rgba(0, 0, 0, 0.178);
+    padding:15px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.dp-div:hover .dp-tooltip{
+    opacity:1;
+}
+
+.dp-tooltip-right{
+    display:flex;
+    flex-direction:column;
+    width:75%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dp-tooltip-img{
+    width: 25%;
+}
+
+.inner-title{
+    font-weight:500;
+    padding-bottom:5px;
+    font-size:15px;
+}
+
+.inner-title2{
+    color:gray;
+    font-size:14px;
+}
