@@ -1,1 +1,1 @@
-# Youtube Homepage Clone Website by Saajid Ahamed
+# Youtube Homepage Clone by Saajid Ahamed
