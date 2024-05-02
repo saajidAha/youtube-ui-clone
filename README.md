@@ -1,1 +1,3 @@
-# Youtube Homepage Clone by Saajid Ahamed
+# Youtube Homepage UI Clone
+
+Tools used: HTML, CSS & JavaScript.
